@@ -1,8 +1,38 @@
-const data: Data = {
-  report: [],
+export enum ReportType {
+  INCOME = 'income',
+  EXPENSE = 'expense',
+}
+
+export const data: Data = {
+  report: [
+    {
+      id: "uuid1",
+      source: "Salary",
+      amount: 50000,
+      created_at: new Date(),
+      updated_at: new Date(),
+      type: ReportType.INCOME,
+    },
+    {
+      id: "uuid2",
+      source: "Salary",
+      amount: 20000,
+      created_at: new Date(),
+      updated_at: new Date(),
+      type: ReportType.EXPENSE,
+    },
+    {
+      id: "uuid3",
+      source: "Food",
+      amount: 15000,
+      created_at: new Date(),
+      updated_at: new Date(),
+      type: ReportType.EXPENSE,
+    }
+  ],
 };
 
-interface Data {
+export interface Data {
   report: {
     id: string;
     source: string;
@@ -13,10 +43,6 @@ interface Data {
   }[];
 }
 
-enum ReportType {
-  INCOME = 'income',
-  EXPENSE = 'expense',
-}
 
 data.report.push({
   id: 'uuid',
