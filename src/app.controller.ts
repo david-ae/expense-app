@@ -4,7 +4,6 @@ import { Post } from '@nestjs/common';
 import { Controller, Get } from '@nestjs/common';
 import { ReportType, data } from './data';
 import {v4 as uuid} from 'uuid';
-import { type } from 'os';
 
 @Controller('report/:type')
 export class AppController {
@@ -44,9 +43,6 @@ export class AppController {
     @Param('type') type: string, @Param('id')id: string, 
     @Body() body: {source: string, amount: number} 
   ) {
-    const {source, amount} = body;
-    const reportType = type === "income" ? ReportType.INCOME : ReportType.EXPENSE;
-
     const report = data.report.find(r => r.id === id);
 
     if(!report) return;
