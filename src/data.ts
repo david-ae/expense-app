@@ -6,29 +6,29 @@ export enum ReportType {
 export const data: Data = {
   report: [
     {
-      id: "uuid1",
-      source: "Salary",
+      id: 'uuid1',
+      source: 'Salary',
       amount: 50000,
       created_at: new Date(),
       updated_at: new Date(),
       type: ReportType.INCOME,
     },
     {
-      id: "uuid2",
-      source: "Salary",
+      id: 'uuid2',
+      source: 'Salary',
       amount: 20000,
       created_at: new Date(),
       updated_at: new Date(),
       type: ReportType.EXPENSE,
     },
     {
-      id: "uuid3",
-      source: "Food",
+      id: 'uuid3',
+      source: 'Food',
       amount: 15000,
       created_at: new Date(),
       updated_at: new Date(),
       type: ReportType.EXPENSE,
-    }
+    },
   ],
 };
 
@@ -42,7 +42,6 @@ export interface Data {
     type: ReportType;
   }[];
 }
-
 
 data.report.push({
   id: 'uuid',
