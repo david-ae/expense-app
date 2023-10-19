@@ -29,6 +29,30 @@ export const data: Data = {
       updated_at: new Date(),
       type: ReportType.EXPENSE,
     },
+    {
+      id: 'uuid4',
+      source: 'Airtime',
+      amount: 5000,
+      created_at: new Date(),
+      updated_at: new Date(),
+      type: ReportType.EXPENSE,
+    },
+    {
+      id: 'uuid5',
+      source: 'Projects',
+      amount: 150000,
+      created_at: new Date(),
+      updated_at: new Date(),
+      type: ReportType.INCOME,
+    },
+    {
+      id: 'uuid6',
+      source: 'Idea',
+      amount: 150000000,
+      created_at: new Date(),
+      updated_at: new Date(),
+      type: ReportType.INCOME,
+    },
   ],
 };
 

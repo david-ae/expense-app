@@ -11,7 +11,7 @@ import {
   ParseUUIDPipe,
   ParseEnumPipe,
 } from '@nestjs/common';
-import { ReportType, data } from '../data';
+import { ReportType } from '../data';
 
 import { ReportService } from './report.service';
 import {
